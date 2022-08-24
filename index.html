@@ -1,51 +1,954 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ambient Canvas Backgrounds | Pipeline | Codrops</title>
-		<meta name="description" content="A set of animated ambient canvas backgrounds with different effects" />
-		<meta name="keywords" content="canvas, ambient, background, animation, javascript, demo, web development" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo5.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-5">
-		<main>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<!-- <a>KTPark</a>
-					<a href="">나란사람</a>
-					<a href="">포트폴리오</a>
-					<a href="https://github.com/KyungTaeP" target="_blank">GITHUB</a> -->
-				</div>
-				<div class="txt">
-					<!-- <a>#노력</a>
-					<a>#노력</a>
-					<a>#벽을 뚫는 쾌감</a>
-					<a>#벽을 뚫는 쾌감</a>
-					<a>#공부에 흥미를 가진</a>
-					<a>#공부에 흥미를 가진</a>
-					<a>#성실</a>
-					<a>#성실</a>
-					<a>#무한한 가능성</a>
-					<a>#무한한 가능성</a>
-					<a>#디자인대로 출력시 쾌감</a>
-					<a>#디자인대로 출력시 쾌감</a>
-					<a>#새로운 내용을 습득하는 즐거움</a>
-					<a>#새로운 내용을 습득하는 즐거움</a>
-					<a>#성장</a>
-					<a>#성장</a> -->
-				  </div>	
-			</div>
-			<div class="content content--canvas">
-				<!-- <h2 class="content__title">Pipeline</h2> -->
-			</div>
-		</main>
-		<script src="js/noise.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/pipeline.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ambient Canvas Backgrounds | Pipeline | Codrops</title>
+    <meta
+      name="description"
+      content="A set of animated ambient canvas backgrounds with different effects"
+    />
+    <meta
+      name="keywords"
+      content="canvas, ambient, background, animation, javascript, demo, web development"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" href="./css/pro1.css" />
+    <link rel="stylesheet" href="./css/pro2.css" />
+    <link rel="stylesheet" href="./css/pro3.css" />
+    <link rel="stylesheet" href="./css/pro4.css" />
+    <link rel="stylesheet" href="./css/pro5.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo5.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+    <script src="./js/textwrite.js" defer></script>
+    <script src="./js/link.js" defer></script>
+    <script src="./js/common.js" defer></script>
+  </head>
+  <body class="demo-5">
+    <div class="frame__title-wrap">
+      <a>박경태</a>
+      <a href="">나란사람</a>
+      <a href="">포트폴리오</a>
+    </div>
+
+    <section class="main_sec">
+      <main>
+        <div class="frame">
+          <div class="txt">
+            <a>#노력</a>
+            <a>#노력</a>
+            <a>#벽을 뚫는 쾌감</a>
+            <a>#벽을 뚫는 쾌감</a>
+            <a>#공부에 흥미를 가진</a>
+            <a>#공부에 흥미를 가진</a>
+            <a>#성실</a>
+            <a>#성실</a>
+            <a>#무한한 가능성</a>
+            <a>#무한한 가능성</a>
+            <a>#디자인대로 출력시 쾌감</a>
+            <a>#디자인대로 출력시 쾌감</a>
+            <a>#새로운 내용을 습득하는 즐거움</a>
+            <a>#새로운 내용을 습득하는 즐거움</a>
+            <a>#성장</a>
+            <a>#성장</a>
+          </div>
+        </div>
+        <div class="content content--canvas">
+          <!-- <h2 class="content__title">Pipeline</h2> -->
+        </div>
+      </main>
+    </section>
+    <section class="myself">
+      <div class="frame">
+        <div class="skill_zip">
+          <h2>사용기술</h2>
+          <div class="skill">
+            <div class="html">
+              <img src="./img/html.png" alt="" />
+            </div>
+            <div class="css">
+              <img src="./img/css.png" alt="" />
+            </div>
+            <div class="jquery">
+              <img src="./img/jquery.png" alt="" />
+            </div>
+            <div class="javascript">
+              <img src="./img/js.png" alt="" />
+            </div>
+            <div class="react">
+              <img src="./img/react.png" alt="" />
+            </div>
+            <div class="photoshop">
+              <img src="./img/photoshop.png" alt="" />
+            </div>
+            <div class="xd">
+              <img src="./img/xd.png" alt="" />
+            </div>
+            <div class="illustrator">
+              <img src="./img/Illustrator.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="skill_txt">
+          <div class="html_txt">
+            <span>HTML</span>
+            <p>
+              - 기본적인 레이아웃 틀 제작<br />
+              - 레이아웃 구조 제작<br />
+              - 지도, 동영상 실행
+            </p>
+          </div>
+          <div class="css_txt">
+            <span>CSS</span>
+            <p>
+              - 배경이미지 사용 가능<br />
+              - 디자인에 맞게 레이아웃 가능<br />
+              - 가상태그, hover 사용 가능<br />
+              - 애니메이션 사용 가능<br />
+              - 패럴렉스 가능
+            </p>
+          </div>
+          <div class="jquery_txt">
+            <span>jQuery</span>
+            <p>
+              - 클릭 이벤트 사용 가능<br />
+              &nbsp;&nbsp;&nbsp;> toggleClass가능<br />
+              - 스크롤 이벤트 사용 가능<br />
+              - 슬라이드 구현 가능<br />
+              - CSS설정 변경 가능
+            </p>
+          </div>
+          <div class="javascript_txt">
+            <span>JavaScript</span>
+            <p>
+              -addEventListener 사용 가능<br />
+              &nbsp;&nbsp;&nbsp;> 스크롤 이벤트 사용 가능<br />
+              &nbsp;&nbsp;&nbsp;> 클릭 이벤트 사용 가능<br />
+              - getElementsByClassName,<br />
+              - getElementById,<br />
+              - querySelector 기본사용 가능<br />
+              - 회원가입 페이지
+            </p>
+          </div>
+          <div class="react_txt">
+            <span>React</span>
+            <p>
+              - public에 저장된 이미지 src로딩<br />
+              - 간단한 레이아웃(쇼핑몰)<br />
+              &nbsp;&nbsp;&nbsp;> 제목<br />
+              &nbsp;&nbsp;&nbsp;> 이미지<br />
+              &nbsp;&nbsp;&nbsp;> 설명<br />
+              &nbsp;&nbsp;&nbsp;> 가격
+            </p>
+          </div>
+          <div class="photoshop_txt">
+            <span>PhotoShop</span>
+            <p>
+              - 이미지 배경 제거<br />
+              - 그림자효과<br />
+              - 사이즈 조정<br />
+              - 등 기본 사용 가능
+            </p>
+          </div>
+          <div class="xd_txt">
+            <span>XD</span>
+            <p>
+              - 와이어프레임 제작 가능
+            </p>
+          </div>
+          <div class="illustrator_txt">
+            <span>Illustrator</span>
+            <p>
+              - 텍스트, 곡선 등<br />
+              - 간단 로고 제작
+            </p>
+          </div>
+        </div>
+        <div class="text_box">
+          <span class="text"></span>
+        </div>
+        <div class="img_sample">
+          <img src="./img/man_re.png" alt="이미지1" />
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="frame">
+        <div class="pro_zip">
+          <div class="pro_one">
+            <!-- <img src="./img/ramen_logo.png" alt=""> -->
+            <div class="pro_one_img"></div>
+            <div>
+              <p>사용스킬 : HTML, CSS</p>
+              <p>사용효과 : 애니메이션</p>
+            </div>
+            <div class="one_txt">
+              <div class="_inner">
+                <div class="one_hd">
+                  <button
+                    class="oramyun"
+                    onclick="window.open('https://www.oramyun.com/');"
+                  >
+                    오늘의 라면
+                  </button>
+                  <button
+                    class="or_re_go"
+                    onclick="window.open('https://kyungtaep.github.io/project1/');"
+                  >
+                    리뉴얼_바로가기
+                  </button>
+                  <button
+                    class="or_git"
+                    onclick="window.open('https://github.com/KyungTaeP/project1');"
+                  >
+                    Github
+                  </button>
+                </div>
+                <h1>리뉴얼 방향</h1>
+                <div class="pro1">
+                  <div class="pro1_txt">
+                    <div class="use1">
+                      <span>사용성</span>
+                      <strong
+                        >1. 로고 & 메뉴 바가 스크롤 다운 시 사라진다</strong
+                      ><br />
+                      <p>&raquo; 포지션 fixed 사용하여 고정 필요</p>
+                      <strong
+                        >2. 버튼의 종류가 구독인지, 종류 구경인지 구분이
+                        안된다</strong
+                      ><br />
+                      <p>
+                        &raquo; 버튼의 글자에 구독, 구경을 추가해서 보기 편하게
+                        변경 필요
+                      </p>
+                    </div>
+                    <div class="des1">
+                      <span>디자인</span>
+                      <strong>1. 페르소나로 스크롤이 증가</strong><br />
+                      <p>
+                        &raquo; 생략하여 원하는 사람만 볼 수 있도록 메뉴로
+                        숨기기
+                      </p>
+                      <strong>2. 구독시 혜택으로 스크롤이 증가</strong><br />
+                      <p>
+                        &raquo; display: fixed 사용해서 1자 정렬 후 자동
+                        슬라이드 추가
+                      </p>
+                      <strong>3. 카카오톡만 시그니쳐 컬러가 없다</strong><br />
+                      <p>
+                        &raquo; 버튼 배경에 인스타처럼 카카오의 시그니쳐 컬러
+                        추가
+                      </p>
+                    </div>
+                  </div>
+                  <div class="skill1">
+                    <span>사용기술</span>
+                    <div class="skill1_img">
+                      <img src="./img/html_stylepsd.png" alt="" />
+                      <img src="./img/css_stylepsd.png" alt="" />
+                      <img src="./img/css_animate_style.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="benchmarking1">
+                    <span>벤치마킹</span>
+                    <div class="bench1_img">
+                      <img src="./img/술담화.png" alt="" />
+                      <img src="./img/프레시코드.png" alt="" />
+                    </div>
+                    <div class="bench1_txt">
+                      <strong>술담화(https://www.sooldamhwa.com/)</strong>
+                      <p>
+                        - 상품마다 사용자가 직접 참여할 수 있는 콘텐츠 마련으로
+                        다양한 의견 참고 가능.
+                      </p>
+                      <strong>프레시코드(https://www.freshcode.me/)</strong>
+                      <p>
+                        - 페르소나를 한정하지 않아 다양한 접근경로 및 결제수단,
+                        사이트 활용 가능성을 참고 가능.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="epilogue1">
+                    <span>에필로그</span>
+                    <p>1. HTML / CSS 사용 방법 익히기</p>
+                    <p>2. CSS로 애니메이션 구현하기</p>
+                    <p>3. HTML / CSS 변경하여 레이아웃 변경하기</p>
+                  </div>
+                  <div class="style_guide1">
+                    <span>스타일가이드</span>
+                    <div class="sg1">
+                      <div class="color1">
+                        <!-- <p>색상</p> -->
+                        <div class="col1_zip">
+                          <div class="col1_1"></div>
+                          <div class="col1_2"></div>
+                          <div class="col1_3"></div>
+                          <div class="col1_4"></div>
+                          <div class="col1_5"></div>
+                          <div class="col1_6"></div>
+                        </div>
+                      </div>
+                      <div class="font1">
+                        <p>에스코어드림서체</p>
+                        <img src="./img/S-core_Dream.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui_icon1">
+                    <span>UI 아이콘</span>
+                    <div class="ui_con1">
+                      <div class="icon1">
+                        <div>
+                          <img src="./img/햄버거바.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/엑스모양.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/pluse.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/instagram_white.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/kakaopay.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/kakaotalk.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/naverpay.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/card.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/통장.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="btn1">
+                        <button>버튼</button>
+                        <button>버튼</button>
+                        <button>버튼</button>
+                        <button>버튼</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pro_two">
+            <div class="pro_two_img"></div>
+            <div>
+              <p>사용스킬 : HTML, CSS</p>
+              <p>사용효과 : 슬라이드, 탭메뉴</p>
+            </div>
+            <div class="two_txt">
+              <div class="_inner">
+                <div class="two_hd">
+                  <button
+                    class="sungsimdang"
+                    onclick="window.open('https://www.sungsimdangmall.co.kr/');"
+                  >
+                    성심당
+                  </button>
+                  <button
+                    class="sung_re_go"
+                    onclick="window.open('https://kyungtaep.github.io/project2/');"
+                  >
+                    리뉴얼_바로가기
+                  </button>
+                  <button
+                    class="sung_git"
+                    onclick="window.open('https://github.com/KyungTaeP/project2');"
+                  >
+                    Github
+                  </button>
+                </div>
+                <h1>리뉴얼 방향</h1>
+                <div class="pro2">
+                  <div class="pro2_txt">
+                    <div class="use2">
+                      <span>사용성</span>
+                      <strong
+                        >1. Nav Bar 위치가 고정되어있지 않아 스크롤 시
+                        사라짐</strong
+                      ><br />
+                      <p>&raquo; Nav Bar 포지션 fixed 만들기(위치 고정)</p>
+                      <strong
+                        >2. 신상품, 베스트, 특산품 등 겹치는 내용들이 따로
+                        존재</strong
+                      ><br />
+                      <p>
+                        &raquo; 탭 메뉴로 만들어서 클릭 시 출력 변경되도록 설정
+                      </p>
+                    </div>
+                    <div class="des2">
+                      <span>디자인</span>
+                      <strong>1. 기능이 없는 로고가 너무 큼</strong><br />
+                      <p>&raquo; 로고 사이즈 줄이기</p>
+                      <strong>2. Nav Bar 전체 grid 안맞음</strong><br />
+                      <p>&raquo; grid맞춰 레이아웃 출력</p>
+                      <strong
+                        >3. 메인 슬라이드에 화살표 및 갯수 표시 없음</strong
+                      ><br />
+                      <p>
+                        &raquo; 화살표 추가하여 클릭 시 이동 및 이미지 몇개인지
+                        갯수 출력
+                      </p>
+                    </div>
+                  </div>
+                  <div class="skill2">
+                    <span>사용기술</span>
+                    <div class="skill2_img">
+                      <img src="./img/html_stylepsd.png" alt="" />
+                      <img src="./img/css_stylepsd.png" alt="" />
+                      <img src="./img/css_animate_style.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="benchmarking2">
+                    <span>벤치마킹</span>
+                    <div class="bench2_img">
+                      <img src="./img/뚜레쥬르.png" alt="" />
+                      <img src="./img/파리바게트.png" alt="" />
+                    </div>
+                    <div class="bench2_txt">
+                      <strong
+                        >뚜레쥬르(https://www.tlj.co.kr:7008/index.asp)</strong
+                      >
+                      <p>- 비슷한 내용 탭 메뉴로 묶기</p>
+                      <p>- 레이아웃 grid 맞추기</p>
+                      <strong>파리바게트(https://www.paris.co.kr/)</strong>
+                      <p>- 슬라이드 리스트 표시</p>
+                      <p>- 레이아웃 정렬</p>
+                    </div>
+                  </div>
+                  <div class="epilogue2">
+                    <span>에필로그</span>
+                    <p>1. HTML/CSS 사용하여 레이아웃 구현</p>
+                    <p>2. CSS로 애니메이션(슬라이드) 구현</p>
+                    <p>3. input사용해서 탭 메뉴 구현</p>
+                  </div>
+                  <div class="style_guide2">
+                    <span>스타일가이드</span>
+                    <div class="sg2">
+                      <div class="color2">
+                        <!-- <p>색상</p> -->
+                        <div class="col2_zip">
+                          <div class="col2_1"></div>
+                          <div class="col2_2"></div>
+                          <div class="col2_3"></div>
+                          <div class="col2_4"></div>
+                          <div class="col2_5"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui_icon2">
+                    <span>UI 아이콘</span>
+                    <div class="ui_con2">
+                      <div class="icon2">
+                        <div>
+                          <img src="./img/facebook.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/instagram.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/kakaotalk.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/besket.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/search.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="btn2">
+                        <button>버튼</button>
+                        <button>버튼</button>
+                        <button>버튼</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pro_three">
+            <!-- <img src="./img/parpot_logo.png" alt=""> -->
+            <div class="pro_three_img"></div>
+            <div>
+              <p>사용스킬 : HTML, CSS, jQuery</p>
+              <p>사용효과 : 슬라이드, 동영상</p>
+            </div>
+            <div class="three_txt">
+              <div class="_inner">
+                <div class="three_hd">
+                  <button
+                    class="parpot"
+                    onclick="window.open('http://mogreen.kr/');"
+                  >
+                    파르팟
+                  </button>
+                  <button
+                    class="par_re_go"
+                    onclick="window.open('https://kyungtaep.github.io/project3/');"
+                  >
+                    리뉴얼_바로가기
+                  </button>
+                  <button
+                    class="par_git"
+                    onclick="window.open('https://github.com/KyungTaeP/project3');"
+                  >
+                    Github
+                  </button>
+                </div>
+                <h1>리뉴얼 방향</h1>
+                <div class="pro3">
+                  <div class="pro3_txt">
+                    <div class="use3">
+                      <span>사용성</span>
+                      <strong>1. 모바일, PC버전이 따로 작성됨</strong><br />
+                      <p>&raquo; 반응형으로 제작</p>
+                      <strong>2. 상단부분 전체에 포인터 적용됨</strong><br />
+                      <p>&raquo; 기능 있는 부분만 포인터 적용</p>
+                      <strong>3. 슬라이드 버튼클릭 이동 시 슬라이드 정지</strong
+                      ><br />
+                      <p>&raquo; 클릭 후 정상 작동하게 수정</p>
+                    </div>
+                    <div class="des3">
+                      <span>디자인</span>
+                      <strong
+                        >1. 슬라이드 이동 시 좌,우 반복으로 원점 복귀</strong
+                      ><br />
+                      <p>&raquo; 한 방향으로만 작동되게 출력</p>
+                      <strong>2. 브렌드 스토리의 레이아웃 grid 안맞음</strong
+                      ><br />
+                      <p>&raquo; 레이아웃 grid 맞추기</p>
+                      <strong>3. 후기 레이아웃 크기가 다름</strong><br />
+                      <p>&raquo; 레이아웃 크기 통일</p>
+                    </div>
+                  </div>
+                  <div class="skill3">
+                    <span>사용기술</span>
+                    <div class="skill3_img">
+                      <img src="./img/html_stylepsd.png" alt="" />
+                      <img src="./img/css_stylepsd.png" alt="" />
+                      <img src="./img/jQuery.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="benchmarking3">
+                    <span>벤치마킹</span>
+                    <div class="bench3_img">
+                      <img src="./img/파르팟_벤치마킹1.png" alt="" />
+                      <img src="./img/파르팟_벤치마킹2.png" alt="" />
+                      <img src="./img/파르팟_벤치마킹3.png" alt="" />
+                    </div>
+                    <div class="bench3_txt">
+                      <strong
+                        >스마트팜코리아(https://www.smartfarmkorea.net/main.do)</strong
+                      >
+                      <p>- 모바일버전 레이아웃 grid 맞추기</p>
+                      <p>- 숨은 내용 더보기 클릭 시 보이도록 설정</p>
+                      <strong
+                        >인트로메딕(https://www.intromedic.com:549/eng/main/)</strong
+                      >
+                      <p>- 이미지와 텍스트 배치</p>
+                      <strong>우리바이오(http://www.wooreebio.co.kr/)</strong>
+                      <p>- 슬라이드 리스트 클릭 후에도 자동 실행</p>
+                    </div>
+                  </div>
+                  <div class="epilogue3">
+                    <span>에필로그</span>
+                    <p>1. HTML/CSS/jQuery 사용하여 레이아웃 구현</p>
+                    <p>
+                      2. jQuery 활용하여 슬라이드(자동 및 클릭 시 수행) 구현
+                    </p>
+                    <p>
+                      3. jQuery 활용하여 햄버거 바 클릭 시 메뉴창 열기 & 더보기
+                      창 활성화
+                    </p>
+                    <p>4. video 자동 실행</p>
+                  </div>
+                  <div class="style_guide3">
+                    <span>스타일가이드</span>
+                    <div class="sg3">
+                      <div class="color3">
+                        <!-- <p>색상</p> -->
+                        <div class="col3_zip">
+                          <div class="col3_1"></div>
+                          <div class="col3_2"></div>
+                          <div class="col3_3"></div>
+                          <div class="col3_4"></div>
+                          <div class="col3_5"></div>
+                        </div>
+                      </div>
+                      <div class="font3">
+                        <p>'Noto Sans KR', 'sans-serif'</p>
+                        <img src="./img/Noto_Sans_KR.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui_icon3">
+                    <span>UI 아이콘</span>
+                    <div class="ui_con3">
+                      <div class="icon3">
+                        <div>
+                          <img src="./img/besket.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/search.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/햄버거바.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/user.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="btn3">
+                        <button>버튼</button>
+                        <button>버튼</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pro_four">
+            <!-- <img src="./img/orion_logo.png" alt=""> -->
+            <div class="pro_four_img"></div>
+            <div>
+              <p>사용스킬 : HTML, CSS, jQuery</p>
+              <p>사용효과 : 슬라이드(좌/우이동), 가상태그, 지도</p>
+            </div>
+            <div class="four_txt">
+              <div class="_inner">
+                <div class="four_hd">
+                  <button
+                    class="parpot"
+                    onclick="window.open('https://www.orionworld.com/');"
+                  >
+                    오리온
+                  </button>
+                  <button
+                    class="par_re_go"
+                    onclick="window.open('https://kyungtaep.github.io/project4/');"
+                  >
+                    리뉴얼_바로가기
+                  </button>
+                  <button
+                    class="parg_git"
+                    onclick="window.open('https://github.com/KyungTaeP/project4');"
+                  >
+                    Github
+                  </button>
+                </div>
+                <h1>리뉴얼 방향</h1>
+                <div class="pro4">
+                  <div class="pro4_txt">
+                    <div class="use4">
+                      <span>사용성</span>
+                      <strong>1. 모바일버전이 제작되지 않음</strong><br />
+                      <p>&raquo; 반응형으로 제작</p>
+                      <strong
+                        >2. 리뷰가 없어서 상품 구매 시 정보습득 어려움</strong
+                      ><br />
+                      <p>
+                        &raquo; 리뷰를 생성해서 제품 구매 시 참고 할 수 있도록
+                        제작
+                      </p>
+                      <strong>3. 신제품에 대한 설명이 없다</strong><br />
+                      <p>&raquo; 신제품의 설명을 적은 새로운 페이지 생성</p>
+                    </div>
+                    <div class="des4">
+                      <span>디자인</span>
+                      <strong>1. 흥미를 유발할 컨텐츠 부족</strong><br />
+                      <p>&raquo; 상품을 다양하게 볼 수 있도록 레이아웃 출력</p>
+                      <strong>2. 겹치는 내용이 따로 출력</strong><br />
+                      <p>&raquo; 겹치는 내용은 하나로 정리하여 레이아웃 정리</p>
+                      <strong>3. 포인트 컬러가 없어서 임펙트가 약함</strong
+                      ><br />
+                      <p>&raquo; 포인트 컬러를 사용하여 강조효과</p>
+                    </div>
+                  </div>
+                  <div class="skill4">
+                    <span>사용기술</span>
+                    <div class="skill4_img">
+                      <img src="./img/html_stylepsd.png" alt="" />
+                      <img src="./img/css_stylepsd.png" alt="" />
+                      <img src="./img/jQuery.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="benchmarking4">
+                    <span>벤치마킹</span>
+                    <div class="bench4_img">
+                      <img src="./img/롯데제과.png" alt="" />
+                      <img src="./img/해태제과.png" alt="" />
+                      <img src="./img/빙그레.png" alt="" />
+                    </div>
+                    <div class="bench4_txt">
+                      <strong>롯데제과(https://www.lotteconf.co.kr/)</strong>
+                      <p>- 제품을 여러개 소개하면서 홍보 및 설명</p>
+                      <strong>해태제과(http://www.ht.co.kr/)</strong>
+                      <p>- 레이아웃 배치</p>
+                      <strong>빙그레(https://www.bing.co.kr/#)</strong>
+                      <p>- 포인트컬러</p>
+                    </div>
+                  </div>
+                  <div class="epilogue4">
+                    <span>에필로그</span>
+                    <div class="epil4_sub">
+                      <div class="epil4_txt">
+                        <p>1. HTML/CSS/jQuery 사용하여 레이아웃 구현</p>
+                        <p>
+                          2. jQuery 활용하여 이미지와 텍스트의 이동 방향이 다른
+                          슬라이드 생성
+                        </p>
+                        <p>3. 가상태그를 활용한 서브메뉴 생성</p>
+                        <p>4. 구글맵 지도 불러오기(iframe)</p>
+                      </div>
+                      <div class="epil4_baseimg">
+                        <p>오리온(전)</p>
+                        <img src="./img/orion_base.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="style_guide4">
+                    <span>스타일가이드</span>
+                    <div class="sg4">
+                      <div class="color4">
+                        <!-- <p>색상</p> -->
+                        <div class="col4_zip">
+                          <div class="col4_1"></div>
+                          <div class="col4_2"></div>
+                          <div class="col4_3"></div>
+                          <div class="col4_4"></div>
+                          <div class="col4_5"></div>
+                        </div>
+                      </div>
+                      <div class="font4">
+                        <div class="font4_1">
+                          <p>빙그레체</p>
+                          <img src="./img/빙그레체.png" alt="" />
+                        </div>
+                        <div class="font4_2">
+                          <p>빙그레 싸만코체</p>
+                          <img src="./img/빙그레_싸만코체.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui_icon4">
+                    <span>UI 아이콘</span>
+                    <div class="ui_con4">
+                      <div class="icon4">
+                        <div>
+                          <img src="./img/youtube_white.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/instagram_white.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/facebook_white.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/blog_white.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="btn4">
+                        <button>버튼</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pro_five">
+            <!-- <img src="./img/adcapsule_logo.png" alt=""> -->
+            <div class="pro_five_img"></div>
+            <div>
+              <p>사용스킬 : HTML, CSS, js</p>
+              <p>사용효과 : grid, swiper, aos, 페럴렉스</p>
+            </div>
+            <div class="five_txt">
+              <div class="_inner">
+                <div class="five_hd">
+                  <button
+                    class="adcapsule"
+                    onclick="window.open('https://www.adcapsule.kr/');"
+                  >
+                    애드캡슐소프트
+                  </button>
+                  <button
+                    class="ad_re_go"
+                    onclick="window.open('https://kyungtaep.github.io/project5/');"
+                  >
+                    리뉴얼_바로가기
+                  </button>
+                  <button
+                    class="ad_git"
+                    onclick="window.open('https://github.com/KyungTaeP/project5');"
+                  >
+                    Github
+                  </button>
+                </div>
+                <h1>리뉴얼 방향</h1>
+                <div class="pro5">
+                  <div class="pro5_txt">
+                    <div class="use5">
+                      <span>사용성</span>
+                      <strong>1. 원하지 않아도 모든 자료를 다 봐야함</strong><br />
+                      <p>&raquo; 일부만 보여주고 원할 경우 선택적으로 볼 수 있게 출력</p>
+                      <strong>2. 스크롤 업/다운 시 계속 자료출력(반대로)</strong><br />
+                      <p>
+                        &raquo; 기존 효과들을 auto로 보여주도록 출력
+                      </p>
+                    </div>
+                    <div class="des5">
+                      <span>디자인</span>
+                      <strong>1. 애니메이션 이동속도가 달라서 불편</strong><br />
+                      <p>&raquo; grid를 활용하여 레이아웃 출력</p>
+                      <strong>2.  swiper을 수동으로 봐야함</strong><br />
+                      <p>&raquo;  swiper을 자동으로 진행되도록 변경</p>
+                      <strong>3. 포인트 컬러가 없어서 임펙트가 약함</strong
+                      ><br />
+                      <p>&raquo; 포인트 컬러를 사용하여 강조효과</p>
+                    </div>
+                  </div>
+                  <div class="skill5">
+                    <span>사용기술</span>
+                    <div class="skill5_img">
+                      <img src="./img/html_stylepsd.png" alt="" />
+                      <img src="./img/css_stylepsd.png" alt="" />
+                      <img src="./img/js.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="benchmarking5">
+                    <span>벤치마킹 & 프레임워크</span>
+                    <div class="bench5_img">
+                      <img src="./img/adcapsule_sample.png" alt="" />
+                      <img src="./img/aos.png" alt="" />
+                      <img src="./img/swiper.png" alt="" />
+                    </div>
+                    <div class="bench5_txt">
+                      <strong>애드캡슐소프트(https://www.adcapsule.kr/main.html)</strong>
+                      <p>- 클론(레이아웃 변경)</p>
+                      <strong>AOS(https://michalsnik.github.io/aos/)</strong>
+                      <p>- 움직이면서 나타나 보이기</p>
+                      <strong>Swiper(https://swiperjs.com/)</strong>
+                      <p>- 슬라이드효과</p>
+                    </div>
+                  </div>
+                  <div class="epilogue5">
+                    <span>에필로그</span>
+                      <div class="epil5_txt">
+                        <p>1. HTML/CSS/JS사용하여 레이아웃 구현</p>
+                        <p>2. 프레임워크&라이브러리 사용하여 움직임 구현</p>
+                        <p>3. CSS로 페럴렉스(시차 움직임)구현</p>
+                        <p>4. JS 로그인/회원가입 양식 구현</p>
+                      </div>
+                  </div>
+                  <div class="style_guide5">
+                    <span>스타일가이드</span>
+                    <div class="sg5">
+                      <div class="color5">
+                        <!-- <p>색상</p> -->
+                        <div class="col5_zip">
+                          <div class="col5_1"></div>
+                          <div class="col5_2"></div>
+                          <div class="col5_3"></div>
+                        </div>
+                      </div>
+                      <div class="font5">
+                        <div class="font5_1">
+                          <p>DM Sans</p>
+                          <img src="./img/DM_Sans.png" alt="" />
+                        </div>
+                        <div class="font5_2">
+                          <p>Pretendard</p>
+                          <img src="./img/Pretendard.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui_icon5">
+                    <span>UI 아이콘</span>
+                    <div class="ui_con5">
+                      <div class="icon5">
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="./img/다음버튼.png" alt="" />
+                        </div>
+                        <div>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div>
+                          <img src="./img/arrow.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="btn5">
+                        <button>버튼</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/noise.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/pipeline.js"></script>
+  </body>
 </html>

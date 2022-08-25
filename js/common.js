@@ -1,3 +1,4 @@
+const logo = document.getElementsByClassName('logo')[0];
 const html = document.getElementsByClassName('html')[0];
 const css = document.getElementsByClassName('css')[0];
 const jquery = document.getElementsByClassName('jquery')[0];
@@ -28,6 +29,28 @@ const threeTxt = document.getElementsByClassName('three_txt')[0];
 const fourTxt = document.getElementsByClassName('four_txt')[0];
 const fiveTxt = document.getElementsByClassName('five_txt')[0];
 
+const home  = document.getElementsByClassName('home')[0];
+const my = document.getElementsByClassName('my')[0];
+const por = document.getElementsByClassName('por')[0];
+
+
+home.addEventListener('click', ()=>{
+    home.classList.add('on');
+    my.classList.remove('on');
+    por.classList.remove('on');
+})
+
+my.addEventListener('click', ()=>{
+    home.classList.remove('on');
+    my.classList.add('on');
+    por.classList.remove('on');
+})
+
+por.addEventListener('click', ()=>{
+    home.classList.remove('on');
+    my.classList.remove('on');
+    por.classList.add('on');
+})
 
 html.addEventListener('click', ()=>{
     htmlTxt.classList.toggle('on');

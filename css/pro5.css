@@ -209,7 +209,7 @@
     display: flex;
     justify-content: space-between;  
     flex-wrap: wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .pro5 .style_guide5 .sg5 > div {
@@ -235,7 +235,7 @@
     /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
   }
   
@@ -254,7 +254,7 @@
   .pro5 .style_guide5 .sg5 .font5 {
     display: flex;
     width: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .pro5 .style_guide5 .sg5 .font5 > div {
@@ -288,8 +288,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* width: calc(100% / 2); */
-    /* border: 1px solid red; */
   }
   
   .pro5 .ui_icon5 .ui_con5 .icon5 > div {
@@ -303,16 +301,3 @@
   .pro5 .ui_icon5 .ui_con5 .icon5 > div:nth-of-type(1) {
     transform: scaleX(-1);
   }
-
-  .pro5 .ui_icon5 .ui_con5 .btn5 {
-    margin: 1.3rem;
-  }
-
-  .pro5 .ui_icon5 .ui_con5 .btn5 > button {
-    background-color: transparent;
-    border: 1px solid #E61D2E;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  

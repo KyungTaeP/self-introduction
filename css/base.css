@@ -515,7 +515,7 @@ a:focus {
     /* width: 500px; */
     width: auto;
     color: var(--color-blue);
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
   
   .frame__title-wrap a {
@@ -530,7 +530,7 @@ a:focus {
   .frame .txt {
     font-family: 'MICEGothic Bold';
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: calc(100vh - 100px);
   }
   
@@ -708,6 +708,12 @@ a:focus {
   height: 50px;
 }
 
+.myself .frame .skill_zip >div > div:nth-of-type(6) img,
+.myself .frame .skill_zip >div > div:nth-of-type(7) img,
+.myself .frame .skill_zip >div > div:nth-of-type(8) img{
+  height: 40px;
+}
+
 .myself .skill_txt {
   width: calc(100% / 3);
   height: 500px;
@@ -767,6 +773,46 @@ a:focus {
 /* myself end */
 
 /* 반응형 start */
+@media(max-width:1100px){
+  .myself .frame {
+    /* border: 1px solid white; */
+    position: relative;
+  }
+
+  .myself .frame .skill_zip {
+    width: 50%;
+    left: 0;
+    /* top: 38%; */
+    top: 50%;
+    transform: translate(0,-50%);
+    /* border: 1px solid pink; */
+}
+
+  /* .myself .frame .skill_zip .skill {
+    width: 50%;
+    border: 1px solid red;
+  } */
+
+  .myself .skill_txt {
+    width: 50%;
+    right: 0;
+    top: 60%;
+    transform: translate(0,-50%);
+    font-size: 1.5rem;
+  }
+
+  /* .myself .skill_txt > div {
+    border: 1px solid blue;
+    right: 0;
+    bottom: 0;
+    transform: translate(0,0);
+  } */
+
+  .myself .img_sample {
+    display: none;
+  }
+}
+
 @media(max-width:800px){
   .myself {
     /* width: 100%; */
@@ -778,22 +824,28 @@ a:focus {
     color: white;
     font-family: 'MICEGothic Bold';
   }
+
+  .myself .frame {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
   
-  .myself .skill_zip {
+  .myself .frame .skill_zip {
     position: absolute;
-    top: 18%;
+    top: 150px;
     left: 0;
     /* transform: translateY(-50%); */
     font-size: 1.5rem;
     /* border: 1px solid white; */
     width: 100%;
     /* width: 350px; */
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .myself .frame .skill_zip h2 {
     /* position: relative; */
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    font-size: 1.5rem;
     /* z-index: 1200; */
   }
   
@@ -811,7 +863,8 @@ a:focus {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid white;
+    width: 100%;
+    /* border: 1px solid white; */
   }
   
   .myself .skill > div {
@@ -844,7 +897,7 @@ a:focus {
     height: 500px;
     /* border: 1px solid blue; */
     position: absolute;
-    top: 63%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
@@ -854,11 +907,12 @@ a:focus {
   
   .myself .skill_txt > div {
     /* border: 1px solid red; */
-    width: 100%;
+    /* width: 100%; */
+    width: 300px;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.3s;
   }
@@ -869,23 +923,26 @@ a:focus {
   
   .myself .skill_txt > div > p {
     text-align: left;
-    padding-left: 2rem;
+    line-height: 1.8;
+    /* padding-left: 2rem; */
   }
   
   .text_box{
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
     font-size: 2rem;
     text-align: center;
-    /* border: 1px solid red; */
+    /* border: 1px solid pink; */
   }
   
-  .myself .img_sample {
+  /* .myself .img_sample {
     display: none;
-  }
+  } */
 }
+
+
 /* 반응형 end */
 
 /* project start */
@@ -1085,3 +1142,130 @@ h1, h2, h3 {
   font-family: 'ONE-Mobile-Title';
   /* border: 1px solid red; */
 }
+
+/* 반응형 start */
+@media(max-width:800px){
+  .project .frame {
+    position: relative;
+    padding: 0;
+    /* border: 1px solid white; */
+  }
+
+  .project .frame .pro_zip{
+    /* border: 1px solid blue; */
+    position: absolute;
+    display: block;
+    height: calc(100% - 60px);
+    bottom: 0;
+    margin: auto;
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-40%, -50%);
+    width: calc(100% - 80px);
+    /* border: 1px solid red; */
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(2) p {
+    font-size: 1rem;
+  }
+
+
+   .project .frame .pro_zip .pro_one {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 15%;
+    left: 10%;
+    transform: translate(-10%, -10%); */
+  }
+
+  .project .frame .pro_zip .pro_two {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 15%;
+    right: 10%;
+    transform: translate(10%, -10%); */
+  }
+  
+  .project .frame .pro_zip .pro_three {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* bottom: 5%;
+    left: 10%;
+    transform: translate(-10%, 10%); */
+  }
+  
+  .project .frame .pro_zip .pro_four {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* bottom: 5%;
+    right: 10%;
+    transform: translate(10%, 10%); */
+  }
+  
+  .project .frame .pro_zip .pro_five {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+
+
+
+
+
+  .project .frame .pro_zip > div {
+    /* position: absolute; */
+    /* width: 700px;
+    height: 300px; */
+    position: relative;
+    display: block;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: calc(100% - 20px);
+    height: calc(100% / 5 - 20px);
+    margin: 10px;
+    /* height: 200px; */
+    /* z-index: 100; */
+    /* border: 1px solid blue; */
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+    /* transition: 0.3s; */
+  }
+
+  .project .frame .pro_zip > div.on > div:nth-of-type(3).on {
+    display: block;
+  }
+  
+
+ 
+  
+
+  
+}
+
+/* 반응형 end */

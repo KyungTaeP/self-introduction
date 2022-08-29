@@ -33,7 +33,6 @@ const home  = document.getElementsByClassName('home')[0];
 const my = document.getElementsByClassName('my')[0];
 const por = document.getElementsByClassName('por')[0];
 
-
 home.addEventListener('click', ()=>{
     home.classList.add('on');
     my.classList.remove('on');

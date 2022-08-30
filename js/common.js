@@ -43,6 +43,7 @@ my.addEventListener('click', ()=>{
     home.classList.remove('on');
     my.classList.add('on');
     por.classList.remove('on');
+    typing();
 })
 
 por.addEventListener('click', ()=>{

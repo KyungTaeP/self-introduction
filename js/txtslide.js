@@ -1,18 +1,14 @@
 $(function(){
-    $('.txt_wrap > div')
-
-
-
+    let intv = setInterval(function () {
+        nextAni()
+    }, 4000)
 
     function nextAni() {
-        $('.txt_wrap').not(':animated').animate(
-            function () {
+        $('.txt_wrap').not(':animated').animate({
+
+        },0,function(){
             $('.txt_wrap div').eq(0).appendTo('.txt_wrap')
-            $('.txt_wrap').css({
-                
-            })
-            $('.text_slide div').eq(0).appendTo('.text_slide')
-            $('.slide_count span').eq(0).appendTo('.slide_count')
         })
     }
 })
+

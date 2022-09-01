@@ -340,6 +340,7 @@ a:focus {
   transition: 0.3s;
   font-size: 2rem;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .content {
@@ -359,88 +360,69 @@ a:focus {
   height: calc(100vh - 100px);
 }
 
+.frame .txt .txt_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
 .frame .txt .txt_wrap > div {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   opacity: 0;
-  /* animation: animate 4s ease-in-out infinite; */
 }
 
 .frame .txt .txt_wrap > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
   color: white;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: 0.3s;
+}
+
+.frame .txt .txt_wrap > div:nth-of-type(1) {
+	animation: animate 4s linear 1;
 }
 
 
 @keyframes animate {
 	0% {
 		opacity: 0;
+    transform: scale(0);
 	}
 
   20% {
     opacity: 0.3;
-    transform: scale(1.2);
+    transform: scale(1);
   }
 
 	40% {
 		opacity: 0.6;
-    transform: scale(1.4);
+    transform: scale(2);
 	}
 
   60% {
     opacity: 0.8;
-    transform: scale(1.8);
+    transform: scale(3);
   }
 
   80% {
     opacity: 1;
-    transform: scale(2);
+    transform: scale(4);
   }
 
   100% {
     opacity: 1;
-    transform: scale(2.2);
+    transform: scale(5);
   }
 }
-
-
-/* 	animation: animate 4s ease-in-out infinite; */
-/* 
-@keyframes animate {
-	0%,
-	100% {
-		clip-path: polygon(
-			0% 45%,
-			16% 44%,
-			33% 50%,
-			54% 60%,
-			70% 61%,
-			84% 59%,
-			100% 52%,
-			100% 100%,
-			0% 100%
-		);
-	}
-
-	50% {
-		clip-path: polygon(
-			0% 60%,
-			15% 65%,
-			34% 66%,
-			51% 62%,
-			67% 50%,
-			84% 45%,
-			100% 46%,
-			100% 100%,
-			0% 100%
-		);
-	}
-}
- */
 
 
 /* 반응형 start */
@@ -517,6 +499,25 @@ a:focus {
     white-space: nowrap;
     font-weight: 400;
   }
+
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(2);
+    }
+  }
+  
 
 }
 

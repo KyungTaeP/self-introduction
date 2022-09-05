@@ -1,0 +1,626 @@
+.project .frame .pro_zip .pro_five.on .five_txt ._inner {  
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    max-width: 1500px;
+    width: calc(100% - 20px);
+    transform: translate(-50%, 0);
+    margin: auto;
+    font-family: 'MICEGothic Bold';
+    /* border: 1px solid red; */
+  }
+  
+  .project .frame .pro_zip .pro_five.on .five_txt .five_hd {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  
+  .project .frame .pro_zip .pro_five.on .five_txt .five_hd > button {
+    margin: 16px;
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #C4C1C1;
+    background-color: #C4C1C1;
+    color: white;
+  }
+
+  .project .frame .pro_zip .pro_five .four_five.on ._inner h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro5 {
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: left;
+  }
+  
+  
+  
+  .pro5 span {
+    font-size: 32px;
+    display: block
+  }
+  
+  .pro5 p {
+    font-size: 18px;
+  }
+  
+  .pro5 strong {
+    font-size: 24px;
+  }
+  
+  .pro5 .pro5_txt {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    /* border: 1px solid blue; */
+  }
+  
+  .pro5 .pro5_txt > div {
+    width: calc(100% / 2);
+    /* border: 1px solid red; */
+  }
+  
+  .pro5 .pro5_txt > div > span {
+    padding-bottom: 10px;
+  }
+  
+  .pro5 .pro5_txt > div > p {
+    padding-bottom: 54px;
+  }
+  
+  .pro5 .pro5_txt > div > strong {
+    color: black;
+  }
+  
+  .pro5 .skill5 {
+    /* border: 3px dotted black; */
+    text-align: left;
+  }
+  
+  .pro5 .skill5 > span {
+    font-size: 32px;
+    padding-bottom: 2rem;
+  }
+  
+  .pro5 .skill5 .skill5_img > img {
+    width: 60px;
+  }
+  
+  .pro5 .benchmarking5 {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 4rem 0;
+  }
+  
+  .pro5 .benchmarking5 span {
+    padding: 2rem 0;
+    display: block;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  
+  .pro5 .benchmarking5 span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      height: 1px;
+      border: 1px dashed gray;
+  }
+  
+  .pro5 .benchmarking5 > div {
+    width: calc(100% / 2);
+    /* border: 1px solid blue; */
+  }
+  
+  .pro5 .benchmarking5 .bench5_img {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .pro5 .benchmarking5 .bench5_img > img {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  
+  .pro5 .benchmarking5 .bench5_txt {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pro5 .benchmarking5 .bench5_txt strong {
+    color: black;
+  }
+  
+  .pro5 .benchmarking5 .bench5_txt > * {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  
+  .pro5 .benchmarking5 .bench5_txt > p {
+    margin-bottom: 3rem;
+  }
+
+  .pro5 .epilogue5 {
+    padding: 4rem 0;
+  }
+  
+  .pro5 .epilogue5 span {
+    position: relative;
+  }
+  
+  .pro5 .epilogue5 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro5 .epilogue5 .epil5_sub {
+    display: flex;
+  }
+
+  .pro5 .epilogue5 .epil5_sub > div {
+    width: calc(100% / 2);
+  }
+
+  .pro5 .epilogue5 p {
+    color: black;
+    line-height: 2;
+  }
+  
+  .pro5 .style_guide5 {
+    padding: 4rem 0;
+  }
+  
+  .pro5 .style_guide5 span {
+    position: relative;
+  }
+  
+  .pro5 .style_guide5 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro5 .style_guide5 .sg5 {
+    display: flex;
+    justify-content: space-between;  
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+  }
+
+  .pro5 .style_guide5 .sg5 > div {
+    /* width: calc(100% / 2); */
+    padding-top: 2rem;
+  }
+ 
+
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip {
+    width: 40%;
+  }
+
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip > div {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    /* border: 1px solid pink; */
+    margin: 10px 2rem;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_1 {
+    background-color: #FF6363;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_2 {
+    background-color: #050505;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_3 {
+    background-color: #71747D;
+  }
+
+  .pro5 .style_guide5 .sg5 .font5 {
+    display: flex;
+    width: 60%;
+    /* border: 1px solid red; */
+  }
+
+  .pro5 .style_guide5 .sg5 .font5 > div {
+    width: calc(100% / 2);
+  }
+
+  .pro5 .style_guide5 .sg5 .font5 > div img {
+    width: 80%;
+  }
+  
+  .pro5 .ui_icon5 .ui_con5 {
+    display: flex;
+    padding: 2rem 0;
+  }
+  
+  .pro5 .ui_icon5 span {
+    position: relative;
+  }
+  
+  .pro5 .ui_icon5 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro5 .ui_icon5 .ui_con5 .icon5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .pro5 .ui_icon5 .ui_con5 .icon5 > div {
+    margin: 1rem;
+  }
+
+  .pro5 .ui_icon5 .ui_con5 .icon5 > div img {
+    height: 80px;
+  }
+  
+  .pro5 .ui_icon5 .ui_con5 .icon5 > div:nth-of-type(1) {
+    transform: scaleX(-1);
+  }
+
+
+   /* 반응형 start */
+   @media(max-width:800px){
+    .project .frame .pro_zip .pro_five.on {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+    .project .frame .pro_zip .pro_five.on .pro_five_img {
+     top: 10%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+ 
+    .project .frame .pro_zip .pro_five.on .five_txt ._inner {  
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     /* max-width: calc(100% -50px); */
+     width: calc(100% - 50px);
+     transform: translate(-50%, 0);
+     margin: auto;
+     font-family: 'MICEGothic Bold';
+     /* border: 1px solid red; */
+   }
+   
+   .project .frame .pro_zip .pro_five.on .five_txt .five_hd {
+     width: 100%;
+     display: flex;
+     /* border: 1px solid red; */
+   }
+   
+   .project .frame .pro_zip .pro_five.on .five_txt .five_hd > button {
+     margin: 10px;
+     /* width: 240px;
+     height: 50px; */
+     width: calc(100% / 3 - 20px);
+     height: 30px;
+     border-radius: 10px;
+     border: 1px solid #C4C1C1;
+     background-color: #C4C1C1;
+     font-size: 0.75rem;
+     color: white;
+   }
+ 
+   .project .frame .pro_zip .pro_five .five_txt.on ._inner h1 {
+     font-size: 1.5rem;
+   }
+ 
+   .project .frame .pro_zip .pro_five .five_txt.on ._inner h1::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     width: 100%;
+     height: 1px;
+     border: 1px dashed gray;
+   }
+   
+   .pro5 {
+     width: 100%;
+     /* border: 1px solid black; */
+     text-align: left;
+   }
+   
+   .pro5 span {
+     font-size: 1.5rem;
+     display: block
+   }
+   
+   .pro5 p {
+     font-size: 1rem;
+   }
+   
+   .pro5 strong {
+     font-size: 20px;
+   }
+   
+   
+   .pro5 .pro5_txt {
+     display: block;
+   }
+   
+   .pro5 .pro5_txt > div {
+     width: 100%;
+     /* border: 1px solid red; */
+   }
+   
+   .pro5 .pro5_txt > div > span {
+     padding-bottom: 10px;
+   }
+   
+   .pro5 .pro5_txt > div > p {
+     padding-bottom: 2rem;
+   }
+   
+   .pro5 .pro5_txt > div > strong {
+     color: black;
+   }
+   
+   .pro5 .skill5 {
+     /* border: 3px dotted black; */
+     text-align: left;
+   }
+   
+   .pro5 .skill5 > span {
+     font-size: 1.5rem;
+     padding-bottom: 1rem;
+   }
+   
+   .pro5 .skill5 .skill5_img > img {
+     width: 50px;
+   }
+   
+   .pro5 .benchmarking5 {
+     text-align: left;
+     display: block;
+     /* display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap; */
+     position: relative;
+     padding: 2rem 0;
+   }
+   
+   .pro5 .benchmarking5 span {
+     padding: 2rem 0;
+     display: block;
+     width: 100%;
+     position: relative;
+     /* border: 1px solid red; */
+   }
+   
+   .pro5 .benchmarking5 span::after{
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: 20px;
+       width: 100%;
+       height: 1px;
+       border: 1px dashed gray;
+   }
+   
+   .pro5 .benchmarking5 > div {
+     width: 100%;
+     /* border: 1px solid blue; */
+   }
+   
+   .pro5 .benchmarking5 .bench5_img > img {
+     width: 30%;
+     margin-right: 1rem;
+   }
+   
+   .pro5 .benchmarking5 .bench5_txt {
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .pro5 .benchmarking5 .bench5_txt strong {
+     color: black;
+   }
+   
+   .pro5 .benchmarking5 .bench5_txt > * {
+     width: 100%;
+     /* border: 1px solid red; */
+   }
+   
+   .pro5 .benchmarking5 .bench5_txt strong:nth-of-type(2) {
+     padding-top: 2rem;
+   }
+   
+   .pro5 .epilogue5 {
+     padding: 2rem 0;
+     display: block;
+   }
+   
+   .pro5 .epilogue5 span {
+     position: relative;
+   }
+   
+   .pro5 .epilogue5 span::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     width: 100%;
+     height: 1px;
+     border: 1px dashed gray;
+   }
+
+    .pro5 .style_guide5 {
+     padding: 2rem 0;
+   }
+   
+   .pro5 .style_guide5 span {
+     position: relative;
+   }
+   
+   .pro5 .style_guide5 span::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     width: 100%;
+     height: 1px;
+     border: 1px dashed gray;
+   }
+   
+   .pro5 .style_guide5 .sg5 {
+     display: block;
+   }
+   
+   .pro5 .style_guide5 .sg5 > div {
+     width: 100%;
+     padding-top: 2rem;
+     /* border: 1px solid blue; */
+   }
+   
+   .pro5 .style_guide5 .sg5 .color5 .col5_zip {
+     display: flex;
+     /* justify-content: space-between; */
+     /* align-items: center; */
+     flex-wrap: wrap;
+     /* border: 1px solid black; */
+     width: 100%;
+   }
+   
+   .pro5 .style_guide5 .sg5 .color5 .col5_zip {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_1 {
+    background-color: #FF6363;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_2 {
+    background-color: #050505;
+  }
+  
+  .pro5 .style_guide5 .sg5 .color5 .col5_zip .col5_3 {
+    background-color: #71747D;
+  }
+    
+  .pro5 .style_guide5 .sg5 .font5 {
+    display: block;
+  }
+
+  .pro5 .style_guide5 .sg5 .font5 > div {
+    width: 100%;
+  }
+
+  .pro5 .style_guide5 .sg5 .font5 > div img {
+    width: 100%;
+  }
+   
+  .pro5 .style_guide5 .sg5 .font5_1 {
+    padding-bottom: 1.5rem;
+  }
+ 
+   .pro5 .ui_icon5 {
+     display: block;
+     width: 100%;
+     /* border: 1px solid black; */
+     /* padding: 2rem 0; */
+   }
+   
+   .pro5 .ui_icon5 .ui_con5 {
+     width: 100%;
+     /* border: 1px solid red; */
+     display: block;
+   }
+ 
+   .pro5 .ui_icon5 span {
+     position: relative;
+   }
+   
+   .pro5 .ui_icon5 span::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     width: 100%;
+     height: 1px;
+     border: 1px dashed gray;
+   }
+   
+   .pro5 .ui_icon5 .ui_con5 .icon5 {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 100%;
+   }
+      
+   .pro5 .ui_icon5 .ui_con5 .icon5 img {
+     width: 50px;
+   }
+   
+   .pro5 .ui_icon5 .ui_con5 .btn5 {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+   }
+ 
+   .pro5 .ui_icon5 .ui_con5 .btn5 > button {
+    background-color: transparent;
+    border: 1px solid #E61D2E;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+ }
+ 
+ /* 반응형 end */

@@ -1,0 +1,676 @@
+.project .frame .pro_zip .pro_three.on .three_txt ._inner {  
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    max-width: 1500px;
+    width: calc(100% - 20px);
+    transform: translate(-50%, 0);
+    margin: auto;
+    font-family: 'MICEGothic Bold';
+    /* border: 1px solid red; */
+  }
+  
+  .project .frame .pro_zip .pro_three.on .three_txt .three_hd {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  
+  .project .frame .pro_zip .pro_three.on .three_txt .three_hd > button {
+    margin: 16px;
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #C4C1C1;
+    background-color: #C4C1C1;
+    color: white;
+  }
+
+  .project .frame .pro_zip .pro_three .three_txt.on ._inner h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro3 {
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: left;
+  }
+  
+  
+  
+  .pro3 span {
+    font-size: 32px;
+    display: block
+  }
+  
+  .pro3 p {
+    font-size: 18px;
+  }
+  
+  .pro3 strong {
+    font-size: 24px;
+  }
+  
+  
+  
+  .pro3 .pro3_txt {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    /* border: 1px solid blue; */
+  }
+  
+  .pro3 .pro3_txt > div {
+    width: calc(100% / 2);
+    /* border: 1px solid red; */
+  }
+  
+  .pro3 .pro3_txt > div > span {
+    padding-bottom: 10px;
+  }
+  
+  .pro3 .pro3_txt > div > p {
+    padding-bottom: 54px;
+  }
+  
+  .pro3 .pro3_txt > div > strong {
+    color: black;
+  }
+  
+  .pro3 .skill3 {
+    /* border: 3px dotted black; */
+    text-align: left;
+  }
+  
+  .pro3 .skill3 > span {
+    font-size: 32px;
+    padding-bottom: 2rem;
+  }
+  
+  .pro3 .skill3 .skill3_img > img {
+    width: 60px;
+  }
+  
+  .pro3 .benchmarking3 {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 4rem 0;
+  }
+  
+  .pro3 .benchmarking3 span {
+    padding: 2rem 0;
+    display: block;
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  
+  .pro3 .benchmarking3 span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      height: 1px;
+      border: 1px dashed gray;
+  }
+  
+  .pro3 .benchmarking3 > div {
+    width: calc(100% / 2);
+    /* border: 1px solid blue; */
+  }
+  
+  .pro3 .benchmarking3 .bench3_img {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .pro3 .benchmarking3 .bench3_img > img {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  
+  .pro3 .benchmarking3 .bench3_txt {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pro3 .benchmarking3 .bench3_txt strong {
+    color: black;
+  }
+  
+  .pro3 .benchmarking3 .bench3_txt > * {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  
+  .pro3 .benchmarking3 .bench3_txt strong:nth-of-type(2),
+  .pro3 .benchmarking3 .bench3_txt strong:nth-of-type(3) {
+    padding-top: 2rem;
+  }
+  
+  .pro3 .epilogue3 {
+    padding: 4rem 0;
+  }
+  
+  .pro3 .epilogue3 span {
+    position: relative;
+  }
+  
+  .pro3 .epilogue3 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro3 .epilogue3 p {
+    color: black;
+    line-height: 2;
+  }
+  
+  .pro3 .style_guide3 {
+    padding: 4rem 0;
+  }
+  
+  .pro3 .style_guide3 span {
+    position: relative;
+  }
+  
+  .pro3 .style_guide3 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro3 .style_guide3 .sg3 {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+  
+  }
+  
+  .pro3 .style_guide3 .sg3 > div {
+    width: calc(100% / 2);
+    padding-top: 2rem;
+  }
+    
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip > div {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    /* border: 1px solid pink; */
+    margin: 10px 2rem;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    width: 50%;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_1 {
+    background-color: #74C476;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_2 {
+    background-color: #ACD827;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_3 {
+    background-color: #FF0000;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_4 {
+    background-color: #333333;
+  }
+  
+  .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_5 {
+    background-color: #EAEAEA;
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 {
+    display: flex;
+    padding: 2rem 0;
+  }
+  
+  .pro3 .ui_icon3 span {
+    position: relative;
+  }
+  
+  .pro3 .ui_icon3 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed gray;
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .icon3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(100% / 2);
+    /* border: 1px solid red; */
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .icon3 > div {
+    margin: 1rem;
+  }
+
+  .pro3 .ui_icon3 .ui_con3 .icon3 > div:nth-of-type(4){
+    transform: scaleX(-1);
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .icon3 img {
+    width: 80px;
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .btn3 {
+    margin-left: 1rem;
+  }
+
+  .pro3 .ui_icon3 .ui_con3 .btn3 > button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: block;
+    margin: 1rem;
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .btn3 > button:nth-of-type(1) {
+    background-color: transparent;
+    border: 1px solid #74C476;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .pro3 .ui_icon3 .ui_con3 .btn3 > button:nth-of-type(2) {
+    background-color: transparent;
+    border: 1px solid #74C476;
+  }
+  
+    /* 반응형 start */
+    @media(max-width:800px){
+      .project .frame .pro_zip .pro_three.on {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      }
+      .project .frame .pro_zip .pro_three.on .pro_three_img {
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      }
+   
+      .project .frame .pro_zip .pro_three.on .three_txt ._inner {  
+       position: absolute;
+       top: 20%;
+       left: 50%;
+       /* max-width: calc(100% -50px); */
+       width: calc(100% - 50px);
+       transform: translate(-50%, 0);
+       margin: auto;
+       font-family: 'MICEGothic Bold';
+       /* border: 1px solid red; */
+     }
+     
+     .project .frame .pro_zip .pro_three.on .three_txt .three_hd {
+       width: 100%;
+       display: flex;
+       /* border: 1px solid red; */
+     }
+     
+     .project .frame .pro_zip .pro_three.on .three_txt .three_hd > button {
+       margin: 10px;
+       /* width: 240px;
+       height: 50px; */
+       width: calc(100% / 3 - 20px);
+       height: 30px;
+       border-radius: 10px;
+       border: 1px solid #C4C1C1;
+       background-color: #C4C1C1;
+       font-size: 0.75rem;
+       color: white;
+     }
+   
+     .project .frame .pro_zip .pro_three .three_txt.on ._inner h1 {
+       font-size: 1.5rem;
+     }
+   
+     .project .frame .pro_zip .pro_three .three_txt.on ._inner h1::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       width: 100%;
+       height: 1px;
+       border: 1px dashed gray;
+     }
+     
+     .pro3 {
+       width: 100%;
+       /* border: 1px solid black; */
+       text-align: left;
+     }
+     
+     .pro3 span {
+       font-size: 1.5rem;
+       display: block
+     }
+     
+     .pro3 p {
+       font-size: 1rem;
+     }
+     
+     .pro3 strong {
+       font-size: 20px;
+     }
+     
+     
+     
+     .pro3 .pro3_txt {
+       display: block;
+       /* display: flex;
+       justify-content: space-around;
+       text-align: left; */
+       /* border: 1px solid blue; */
+     }
+     
+     /* .pro1 .pro1_txt  > * {
+       border: 1px solid orange;
+     } */
+     
+     .pro3 .pro3_txt > div {
+       width: 100%;
+       /* border: 1px solid red; */
+     }
+     
+     .pro3 .pro3_txt > div > span {
+       padding-bottom: 10px;
+     }
+     
+     .pro3 .pro3_txt > div > p {
+       padding-bottom: 2rem;
+     }
+     
+     .pro3 .pro3_txt > div > strong {
+       color: black;
+     }
+     
+     .pro3 .skill3 {
+       /* border: 3px dotted black; */
+       text-align: left;
+     }
+     
+     .pro3 .skill3 > span {
+       font-size: 1.5rem;
+       padding-bottom: 1rem;
+     }
+     
+     .pro3 .skill3 .skill3_img > img {
+       width: 50px;
+     }
+     
+     .pro3 .benchmarking3 {
+       text-align: left;
+       display: block;
+       /* display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap; */
+       position: relative;
+       padding: 2rem 0;
+     }
+     
+     .pro3 .benchmarking3 span {
+       padding: 2rem 0;
+       display: block;
+       width: 100%;
+       position: relative;
+       /* border: 1px solid red; */
+     }
+     
+     .pro3 .benchmarking3 span::after{
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: 20px;
+         width: 100%;
+         height: 1px;
+         border: 1px dashed gray;
+     }
+     
+     .pro3 .benchmarking3 > div {
+       width: 100%;
+       /* border: 1px solid blue; */
+     }
+     
+     .pro3 .benchmarking3 .bench3_img > img {
+       width: 30%;
+       margin-right: 1rem;
+     }
+     
+     .pro3 .benchmarking3 .bench3_txt {
+       display: flex;
+       flex-flow: column;
+       align-items: center;
+       justify-content: center;
+     }
+     
+     .pro3 .benchmarking3 .bench3_txt strong {
+       color: black;
+     }
+     
+     .pro3 .benchmarking3 .bench3_txt > * {
+       width: 100%;
+       /* border: 1px solid red; */
+     }
+     
+     .pro3 .benchmarking3 .bench3_txt strong:nth-of-type(2) {
+       padding-top: 2rem;
+     }
+     
+     .pro3 .epilogue3 {
+       padding: 2rem 0;
+     }
+     
+     .pro3 .epilogue3 span {
+       position: relative;
+     }
+     
+     .pro3 .epilogue3 span::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       width: 100%;
+       height: 1px;
+       border: 1px dashed gray;
+     }
+     
+     .pro3 .epilogue3 p {
+       color: black;
+       line-height: 2;
+     }
+     
+     .pro3 .style_guide3 {
+       padding: 2rem 0;
+     }
+     
+     .pro3 .style_guide3 span {
+       position: relative;
+     }
+     
+     .pro3 .style_guide3 span::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       width: 100%;
+       height: 1px;
+       border: 1px dashed gray;
+     }
+     
+     .pro3 .style_guide3 .sg3 {
+       display: block;
+       /* display: flex;
+       justify-content: space-between; */
+       /* border: 1px solid blue; */
+     
+     }
+     
+     .pro3 .style_guide3 .sg3 > div {
+       width: 100%;
+       padding-top: 2rem;
+       /* border: 1px solid blue; */
+     }
+     
+     .pro3 .style_guide3 .sg3 .color3 .col3_zip {
+       display: flex;
+       /* justify-content: space-between; */
+       /* align-items: center; */
+       flex-wrap: wrap;
+       /* border: 1px solid black; */
+       width: 100%;
+     }
+     
+     .pro3 .style_guide3 .sg3 .color3 .col3_zip > div {
+       width: 60px;
+       height: 60px;
+       border-radius: 20px;
+       /* border: 1px solid pink; */
+       margin: 5px;
+     }
+     
+   
+     .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_1 {
+      background-color: #74C476;
+    }
+    
+    .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_2 {
+      background-color: #ACD827;
+    }
+    
+    .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_3 {
+      background-color: #FF0000;
+    }
+    
+    .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_4 {
+      background-color: #333333;
+    }
+    
+    .pro3 .style_guide3 .sg3 .color3 .col3_zip .col3_5 {
+      background-color: #EAEAEA;
+    }
+     
+     /* .pro1 .style_guide1 .sg1 .font1 {
+       border: 1px solid red;
+     } */
+   
+     .pro3 .style_guide3 .sg3 .font3 > p {
+       /* border: 1px solid red; */
+       margin-left: 10px;
+     }
+   
+     .pro3 .style_guide3 .sg3 .font3 > img {
+       width: 100%;
+     }
+   
+     .pro3 .ui_icon3 {
+       display: block;
+       width: 100%;
+       /* border: 1px solid black; */
+       /* padding: 2rem 0; */
+     }
+     
+     .pro3 .ui_icon3 .ui_con3 {
+       width: 100%;
+       /* border: 1px solid red; */
+       display: block;
+     }
+   
+     .pro3 .ui_icon3 span {
+       position: relative;
+     }
+     
+     .pro3 .ui_icon3 span::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       width: 100%;
+       height: 1px;
+       border: 1px dashed gray;
+     }
+     
+     .pro3 .ui_icon3 .ui_con3 .icon3 {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       width: 100%;
+       /* border: 1px solid red; */
+     }
+     
+     .pro3 .ui_icon3 .ui_con3 .icon3 > div {
+       margin: 1rem;
+     }
+     
+     .pro3 .ui_icon3 .ui_con3 .icon3 img {
+       width: 80px;
+     }
+     
+     .pro3 .ui_icon3 .ui_con3 .btn3 {
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       width: 100%;
+     }
+   
+     .pro3 .ui_icon3 .ui_con3 .btn3 > button {
+      width: 150px;
+      height: 50px;
+      border-radius: 20px;
+      color: block;
+      margin: 1rem;
+    }
+    
+    .pro3 .ui_icon3 .ui_con3 .btn3 > button:nth-of-type(1) {
+      background-color: transparent;
+      border: 1px solid #74C476;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    
+    .pro3 .ui_icon3 .ui_con3 .btn3 > button:nth-of-type(2) {
+      background-color: transparent;
+      border: 1px solid #74C476;
+    }
+    
+   }
+   
+   /* 반응형 end */

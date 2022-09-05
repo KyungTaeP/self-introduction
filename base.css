@@ -1,0 +1,1141 @@
+@charset "utf-8";
+
+/* 제목 폰트 */
+@font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 내용 폰트 */
+@font-face {
+  font-family: 'MICEGothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+  --mw: 1720px;
+  --color-blue:#03a9f4;
+  --color-text: #5c5ee7;
+  --color-link: #0ab5e4;
+  --color-link-hover: #fff;
+  --color-title: #0ab5e4;
+  --color-pro1-bg : #FFF3F3;
+  --color-pro2-bg : #FFF9EC;
+  --color-pro3-bg : #ECFFF2;
+  --color-pro4-bg : #FFECEC;
+  --color-pro5-bg : #F5F5F5;
+}
+
+html {
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175",
+    "Hoefler Text", Garamond, "Times New Roman", serif;
+  min-height: 100vh;
+  /* max-width: var(--mw); */
+  margin: auto;
+  color: #57585c;
+  color: var(--color-text);
+  background-color: #000;
+  border: 10px solid red;
+  overflow: hidden;
+}
+
+/* Color schemes */
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+.home.on,
+.my.on,
+.por.on {
+  color: white;
+}
+
+.sec_zip {
+  display: flex;
+  justify-content: space-between;
+  width: 200%;
+  position: relative;
+}
+
+.main_sec {
+  position: relative;
+
+  z-index: 100;
+
+  width: calc(100% / 2);
+  /* width: 100%; */
+
+  height: 100vh;
+}
+
+
+.frame {
+	/* max-width: var(--mw); */
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	/* z-index: 1000; */
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* border: 3px solid white; */
+}
+
+.frame__title-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  left: 30px;
+  /* left: 30px; */
+  width: 600px;
+  color: var(--color-blue);
+	font-size: 40px;
+  /* border: 1px solid white; */
+}
+
+.frame__title-wrap a {
+  font-family: 'ONE-Mobile-Title';
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.frame .txt {
+  font-family: 'YESGothic-Regular';
+  position: relative;
+  /* border: 1px solid red; */
+  height: calc(100vh - 100px);
+}
+
+.frame .txt .txt_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.frame .txt .txt_wrap > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  opacity: 0;
+}
+
+.frame .txt .txt_wrap > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.frame .txt .txt_wrap > div:nth-of-type(1) {
+	animation: animate 3s linear 1;
+}
+
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+    transform: scale(0);
+	}
+
+  25% {
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+
+	50% {
+		opacity: 0.6;
+    transform: scale(1);
+	}
+
+  75% {
+    opacity: 0.8;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+
+
+/* 반응형 start */
+@media(max-width:800px){ 
+  .sec_zip {
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    position: relative;
+  }
+
+  .main_sec {
+    position: relative;
+
+  z-index: 100;
+
+  width: calc(100% / 2);
+  /* width: 100%; */
+
+  height: 100vh;
+  }
+
+  .frame {
+    /* max-width: var(--mw); */
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 3rem 5vw;
+    text-align: center;
+    position: relative;
+    /* z-index: 1000; */
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* border: 3px solid white; */
+  }
+
+  .frame__title-wrap {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 30px;
+    /* left: 30px; */
+    /* width: 500px; */
+    width: auto;
+    color: var(--color-blue);
+    /* border: 1px solid white; */
+  }
+  
+  .frame__title-wrap a {
+    font-family: 'ONE-Mobile-Title';
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .frame .txt {
+    font-family: 'YESGothic-Regular';
+    position: relative;
+    /* border: 1px solid red; */
+    height: calc(100vh - 100px);
+  }
+  
+  .frame .txt a {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(2);
+    }
+  }
+  
+
+}
+
+/* 반응형 end */
+
+
+/* myself start */
+.myself {
+  /* width: 100%; */
+  width: calc(100% / 2);
+  height: 100vh;
+  z-index: 100;
+  /* border: 1px solid red; */
+  margin: auto;
+  color: white;
+  font-family: 'YESGothic-Regular';
+}
+
+.myself .skill_zip {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+  font-size: 1.5rem;
+  /* border: 1px solid white; */
+  width: calc(100% / 3);
+  /* width: 350px; */
+  padding: 2rem;
+}
+
+.myself .frame .skill_zip span {
+  display: block;
+  text-align: left;
+  /* position: relative; */
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  /* z-index: 1200; */
+}
+
+.myself .skill {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.myself .skill > div {
+  /* padding: 1.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  margin: 5px;
+  /* border: 1px solid white; */
+}
+
+
+
+.myself .frame .skill_zip >div > div img {
+  height: 50px;
+}
+
+.myself .frame .skill_zip >div > div:nth-of-type(6) img,
+.myself .frame .skill_zip >div > div:nth-of-type(7) img,
+.myself .frame .skill_zip >div > div:nth-of-type(8) img{
+  height: 40px;
+}
+
+.myself .skill_txt {
+  /* width: calc(100% / 3); */
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center; 
+}
+
+.myself .skill_txt > div {
+  /* border: 1px solid red; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.myself .skill_txt > div.on {
+  opacity: 1;
+}
+
+.myself .skill_txt > div > p {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.text_box{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 2rem;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.myself .img_sample {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  transform: translate(10%, 10%);
+}
+
+.myself .img_sample img {
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+/* myself end */
+
+/* 반응형 start */
+@media(max-width:1100px){
+  .myself .frame {
+    /* border: 1px solid white; */
+    position: relative;
+  }
+
+  .myself .frame .skill_zip {
+    width: 50%;
+    left: 0;
+    /* top: 38%; */
+    top: 50%;
+    transform: translate(0,-50%);
+    /* border: 1px solid pink; */
+}
+
+  /* .myself .frame .skill_zip .skill {
+    width: 50%;
+    border: 1px solid red;
+  } */
+
+  .myself .skill_txt {
+    width: 50%;
+    right: 0;
+    top: 60%;
+    transform: translate(0,-50%);
+    font-size: 1.5rem;
+  }
+
+  /* .myself .skill_txt > div {
+    border: 1px solid blue;
+    right: 0;
+    bottom: 0;
+    transform: translate(0,0);
+  } */
+
+  .myself .img_sample {
+    display: none;
+  }
+}
+
+@media(max-width:800px){
+  .myself {
+    /* width: 100%; */
+    width: calc(100% / 2);
+    height: 100vh;
+    z-index: 100;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: white;
+    font-family: 'YESGothic-Regular';
+  }
+
+  .myself .frame {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  
+  .myself .frame .skill_zip {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    /* transform: translateY(-50%); */
+    font-size: 1.5rem;
+    /* border: 1px solid white; */
+    width: 100%;
+    /* width: 350px; */
+    padding: 1rem;
+  }
+  
+  .myself .frame .skill_zip span {
+    /* position: relative; */
+    /* padding-left: 1rem; */
+    font-size: 1.5rem;
+    /* z-index: 1200; */
+  }
+  
+  .myself .skill {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid white; */
+  }
+  
+  .myself .skill > div {
+    /* padding: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 5px;
+    /* border: 1px solid white; */
+  }
+  
+  
+  
+  .myself .frame .skill_zip >div > div img {
+    height: 40px;
+  }
+
+  .myself .frame .skill_zip >div > div:nth-of-type(6) img,
+  .myself .frame .skill_zip >div > div:nth-of-type(7) img,
+  .myself .frame .skill_zip >div > div:nth-of-type(8) img{
+    height: 30px;
+  }
+  
+  .myself .skill_txt {
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center; 
+  }
+  
+  .myself .skill_txt > div {
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .myself .skill_txt > div.on {
+    opacity: 1;
+  }
+  
+  .myself .skill_txt > div > p {
+    text-align: left;
+    line-height: 1.8;
+    /* padding-left: 2rem; */
+  }
+  
+  .text_box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    /* border: 1px solid pink; */
+  }
+  
+  /* .myself .img_sample {
+    display: none;
+  } */
+}
+
+
+/* 반응형 end */
+
+/* project start */
+.project {
+  /* width: 100%; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  /* border: 1px solid red; */
+  margin: auto;
+  color: white;
+  font-family: 'YESGothic-Regular';
+}
+
+.project .frame {
+  position: relative;
+  padding: 0;
+  /* border: 1px solid white; */
+}
+
+/* .project .frame .pro_zip > div {
+  position: absolute; */
+  /* width: 700px;
+  height: 300px; */
+  /* width: calc(100% / 3);
+  height: calc(100% / 3); */
+  /* z-index: 100; */
+  /* border: 1px solid blue; */
+/* } */
+
+.project .frame .pro_zip {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.project .frame .pro_zip > div {
+  position: relative;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  width: calc(100% / 3 - 20px);
+  height: 300px;
+  transition: 0.3s;
+  /* border: 1px solid red; */
+}
+
+.project .frame .pro_zip > div.on {
+  z-index: 1000;
+  position: absolute;
+  width: calc(100% - 100px);
+  height: calc(100vh - 100px);
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: auto;
+}
+
+.project .frame .pro_zip > div > div .pro_close {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.project .frame .pro_zip .pro_one.on {
+  background-color: var(--color-pro1-bg);
+}
+
+.project .frame .pro_zip .pro_two.on {
+  background-color: var(--color-pro2-bg);
+}
+
+.project .frame .pro_zip .pro_three.on {
+  background-color: var(--color-pro3-bg);
+}
+
+.project .frame .pro_zip .pro_four.on {
+  background-color: var(--color-pro4-bg);
+}
+
+.project .frame .pro_zip .pro_five.on {
+  background-color: var(--color-pro5-bg);
+}
+
+
+
+.project .frame .pro_zip > div.on> div:nth-of-type(2) {
+  display: none;
+}
+
+.project .frame .pro_zip > div > div:nth-of-type(1) {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  width: 125px;
+  height: 125px;
+}
+
+.project .frame .pro_zip > div > div:nth-of-type(2) {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.project .frame .pro_zip > div > div:nth-of-type(3) {
+  display: none;
+}
+
+.project .frame .pro_zip > div > div:nth-of-type(3).on {
+  display: block;
+}
+
+.project .frame .pro_zip > div > div > p {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+/* .project .frame .pro_zip .pro_one {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+} */
+
+/* .project .frame .pro_zip .pro_two {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  transform: translate(10%, -10%);
+} */
+
+/* .project .frame .pro_zip .pro_three {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  transform: translate(-10%, 10%);
+} */
+
+/* .project .frame .pro_zip .pro_four {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(10%, 10%);
+} */
+
+/* .project .frame .pro_zip .pro_five {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.project .frame .pro_zip > div .pro_one_img {
+  background-image: url(../img/ramen_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project .frame .pro_zip > div .pro_two_img {
+  background-image: url(../img/sungsimdang_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project .frame .pro_zip > div .pro_three_img {
+  background-image: url(../img/parpot_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project .frame .pro_zip > div .pro_four_img {
+  background-image: url(../img/orion_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project .frame .pro_zip > div .pro_five_img {
+  background-image: url(../img/adcapsule_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* 반응형 start */
+@media(max-width:800px){
+  .project .frame {
+    position: relative;
+    padding: 0;
+    /* border: 1px solid white; */
+  }
+
+  .project .frame .pro_zip{
+    /* border: 1px solid blue; */
+    position: absolute;
+    display: block;
+    height: calc(100% - 60px);
+    bottom: 0;
+    margin: auto;
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-40%, -50%);
+    width: calc(100% - 80px);
+    /* border: 1px solid red; */
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(2) p {
+    font-size: 1rem;
+  }
+
+
+   .project .frame .pro_zip .pro_one {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 15%;
+    left: 10%;
+    transform: translate(-10%, -10%); */
+  }
+
+  .project .frame .pro_zip .pro_two {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 15%;
+    right: 10%;
+    transform: translate(10%, -10%); */
+  }
+  
+  .project .frame .pro_zip .pro_three {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* bottom: 5%;
+    left: 10%;
+    transform: translate(-10%, 10%); */
+  }
+  
+  .project .frame .pro_zip .pro_four {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* bottom: 5%;
+    right: 10%;
+    transform: translate(10%, 10%); */
+  }
+  
+  .project .frame .pro_zip .pro_five {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    /* top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+
+
+
+
+
+  .project .frame .pro_zip > div {
+    /* position: absolute; */
+    /* width: 700px;
+    height: 300px; */
+    position: relative;
+    display: block;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: calc(100% - 20px);
+    height: calc(100% / 5 - 20px);
+    margin: 10px;
+    /* height: 200px; */
+    /* z-index: 100; */
+    /* border: 1px solid blue; */
+  }
+
+  .project .frame .pro_zip > div > div:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+    /* transition: 0.3s; */
+  }
+
+  .project .frame .pro_zip > div.on > div:nth-of-type(3).on {
+    display: block;
+  }
+  
+
+ 
+  
+
+  
+}
+
+/* 반응형 end */

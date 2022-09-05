@@ -1,7 +1,7 @@
 $(function(){
     let intv = setInterval(function () {
         nextAni()
-    }, 4000)
+    }, 3000)
 
     function nextAni() {
         $('.txt_wrap').not(':animated').animate({

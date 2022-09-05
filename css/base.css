@@ -385,10 +385,11 @@ a:focus {
   width: 100%;
   flex-wrap: wrap;
   color: white;
+  font-size: 1.5rem;
 }
 
 .frame .txt .txt_wrap > div:nth-of-type(1) {
-	animation: animate 4s linear 1;
+	animation: animate 3s linear 1;
 }
 
 
@@ -398,29 +399,24 @@ a:focus {
     transform: scale(0);
 	}
 
-  20% {
+  25% {
     opacity: 0.3;
-    transform: scale(1);
+    transform: scale(0.5);
   }
 
-	40% {
+	50% {
 		opacity: 0.6;
-    transform: scale(2);
+    transform: scale(1);
 	}
 
-  60% {
+  75% {
     opacity: 0.8;
-    transform: scale(3);
-  }
-
-  80% {
-    opacity: 1;
-    transform: scale(4);
+    transform: scale(1.5);
   }
 
   100% {
     opacity: 1;
-    transform: scale(5);
+    transform: scale(2);
   }
 }
 
@@ -548,9 +544,12 @@ a:focus {
   padding: 2rem;
 }
 
-.myself .frame .skill_zip h2 {
+.myself .frame .skill_zip span {
+  display: block;
+  text-align: left;
   /* position: relative; */
   padding-left: 1rem;
+  font-size: 1.5rem;
   /* z-index: 1200; */
 }
 
@@ -714,22 +713,12 @@ a:focus {
     padding: 1rem;
   }
   
-  .myself .frame .skill_zip h2 {
+  .myself .frame .skill_zip span {
     /* position: relative; */
     /* padding-left: 1rem; */
     font-size: 1.5rem;
     /* z-index: 1200; */
   }
-  
-  /* .myself .frame .skill_zip h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    height: 1px;
-    border: 1px dashed gray;
-  } */
   
   .myself .skill {
     display: flex;
@@ -850,13 +839,13 @@ a:focus {
   position: relative;
   width: 100%;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .project .frame .pro_zip > div {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   transition: 0.3s;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .project .frame .pro_zip > div.on {
@@ -872,7 +861,16 @@ a:focus {
   /* margin: auto; */
 }
 
-
+.project .frame .pro_zip > div > div .pro_close {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 10px;
+}
 
 .project .frame .pro_zip .pro_one.on {
   background-color: var(--color-pro1-bg);
@@ -895,11 +893,6 @@ a:focus {
 }
 
 
-
-
-/* .project .frame .pro_zip > div > img {
-  width: 120px;
-} */
 
 .project .frame .pro_zip > div.on> div:nth-of-type(2) {
   display: none;
@@ -932,8 +925,9 @@ a:focus {
 
 .project .frame .pro_zip > div > div > p {
   font-size: 1.5rem;
-  /* border: 1px solid white; */
 }
+
+
 
 
 
@@ -1005,14 +999,6 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-
-h1, h2, h3 {
-  text-align: left;
-  position: relative;
-  font-family: 'ONE-Mobile-Title';
-  /* border: 1px solid red; */
 }
 
 /* 반응형 start */

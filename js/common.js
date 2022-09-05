@@ -33,10 +33,39 @@ const home  = document.getElementsByClassName('home')[0];
 const my = document.getElementsByClassName('my')[0];
 const por = document.getElementsByClassName('por')[0];
 
+const proClose = document.querySelectorAll('.pro_close');
+
+
+console.log(proClose);
+
+proClose.addEventListener('click', ()=>{
+    proOne.classList.remove('on');
+    proTwo.classList.remove('on');
+    proThree.classList.remove('on');
+    proFour.classList.remove('on');
+    proFive.classList.remove('on');
+    oneTxt.classList.remove('on');
+    twoTxt.classList.remove('on');
+    threeTxt.classList.remove('on');
+    fourTxt.classList.remove('on');
+    fiveTxt.classList.remove('on');
+    
+})
+
 home.addEventListener('click', ()=>{
     home.classList.add('on');
     my.classList.remove('on');
     por.classList.remove('on');
+    proOne.classList.remove('on');
+    proTwo.classList.remove('on');
+    proThree.classList.remove('on');
+    proFour.classList.remove('on');
+    proFive.classList.remove('on');
+    oneTxt.classList.remove('on');
+    twoTxt.classList.remove('on');
+    threeTxt.classList.remove('on');
+    fourTxt.classList.remove('on');
+    fiveTxt.classList.remove('on');
 })
 
 my.addEventListener('click', ()=>{
@@ -44,12 +73,32 @@ my.addEventListener('click', ()=>{
     my.classList.add('on');
     por.classList.remove('on');
     typing();
+    proOne.classList.remove('on');
+    proTwo.classList.remove('on');
+    proThree.classList.remove('on');
+    proFour.classList.remove('on');
+    proFive.classList.remove('on');
+    oneTxt.classList.remove('on');
+    twoTxt.classList.remove('on');
+    threeTxt.classList.remove('on');
+    fourTxt.classList.remove('on');
+    fiveTxt.classList.remove('on');
 })
 
 por.addEventListener('click', ()=>{
     home.classList.remove('on');
     my.classList.remove('on');
     por.classList.add('on');
+    proOne.classList.remove('on');
+    proTwo.classList.remove('on');
+    proThree.classList.remove('on');
+    proFour.classList.remove('on');
+    proFive.classList.remove('on');
+    oneTxt.classList.remove('on');
+    twoTxt.classList.remove('on');
+    threeTxt.classList.remove('on');
+    fourTxt.classList.remove('on');
+    fiveTxt.classList.remove('on');
 })
 
 html.addEventListener('click', ()=>{
@@ -141,39 +190,39 @@ illustrator.addEventListener('click', ()=>{
 })
 
 proOne.addEventListener('click', ()=>{
-    proOne.classList.toggle('on');
+    proOne.classList.add('on');
     proTwo.classList.remove('on');
     proThree.classList.remove('on');
     proFour.classList.remove('on');
     proFive.classList.remove('on');
-    oneTxt.classList.toggle('on');
+    oneTxt.classList.add('on');
 })
 
 proTwo.addEventListener('click', ()=>{
     proOne.classList.remove('on');
-    proTwo.classList.toggle('on');
+    proTwo.classList.add('on');
     proThree.classList.remove('on');
     proFour.classList.remove('on');
     proFive.classList.remove('on');
-    twoTxt.classList.toggle('on');
+    twoTxt.classList.add('on');
 })
 
 proThree.addEventListener('click', ()=>{
     proOne.classList.remove('on');
     proTwo.classList.remove('on');
-    proThree.classList.toggle('on');
+    proThree.classList.add('on');
     proFour.classList.remove('on');
     proFive.classList.remove('on');
-    threeTxt.classList.toggle('on');
+    threeTxt.classList.add('on');
 })
 
 proFour.addEventListener('click', ()=>{
     proOne.classList.remove('on');
     proTwo.classList.remove('on');
     proThree.classList.remove('on');
-    proFour.classList.toggle('on');
+    proFour.classList.add('on');
     proFive.classList.remove('on');
-    fourTxt.classList.toggle('on');
+    fourTxt.classList.add('on');
 })
 
 proFive.addEventListener('click', ()=>{
@@ -181,6 +230,7 @@ proFive.addEventListener('click', ()=>{
     proTwo.classList.remove('on');
     proThree.classList.remove('on');
     proFour.classList.remove('on');
-    proFive.classList.toggle('on');
-    fiveTxt.classList.toggle('on');
+    proFive.classList.add('on');
+    fiveTxt.classList.add('on');
 })
+

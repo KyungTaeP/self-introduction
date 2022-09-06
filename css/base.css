@@ -665,11 +665,13 @@ a:focus {
   } */
 
   .myself .skill_txt {
-    width: 50%;
+    /* width: 50%; */
+    width: 400px;
     right: 0;
-    top: 60%;
+    top: 65%;
     transform: translate(0,-50%);
     font-size: 1.5rem;
+    /* border: 1px solid red; */
   }
 
   /* .myself .skill_txt > div {
@@ -806,6 +808,12 @@ a:focus {
 
 /* 반응형 end */
 
+.project .frame .pro_zip > div ._inner > p {
+  font-size: 40px;
+  /* border: 1px solid red; */
+  text-align: left;
+}
+
 /* project start */
 .project {
   /* width: 100%; */
@@ -825,31 +833,42 @@ a:focus {
   /* border: 1px solid white; */
 }
 
-.project .frame .pro_zip > div {
-  position: absolute;
+/* .project .frame .pro_zip > div {
+  position: absolute; */
   /* width: 700px;
   height: 300px; */
-  width: calc(100% / 3);
-  height: calc(100% / 3);
-  z-index: 100;
+  /* width: calc(100% / 3);
+  height: calc(100% / 3); */
+  /* z-index: 100; */
   /* border: 1px solid blue; */
-}
+/* } */
 
 .project .frame .pro_zip {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  /* border: 1px solid red; */
 }
 
 .project .frame .pro_zip > div {
+  position: relative;
+  margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  transition: 0.3s;
   color: rgba(0, 0, 0, 0.8);
+  width: calc(100% / 3 - 20px);
+  height: 300px;
+  transition: 0.3s;
+  /* border: 1px solid red; */
 }
 
 .project .frame .pro_zip > div.on {
   z-index: 1000;
+  position: absolute;
   width: calc(100% - 100px);
   height: calc(100vh - 100px);
   top: 53%;
@@ -858,7 +877,7 @@ a:focus {
   color: gray;
   overflow: hidden;
   overflow-y: scroll;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .project .frame .pro_zip > div > div .pro_close {
@@ -931,40 +950,40 @@ a:focus {
 
 
 
-.project .frame .pro_zip .pro_one {
+/* .project .frame .pro_zip .pro_one {
   position: absolute;
   top: 15%;
   left: 10%;
   transform: translate(-10%, -10%);
-}
+} */
 
-.project .frame .pro_zip .pro_two {
+/* .project .frame .pro_zip .pro_two {
   position: absolute;
   top: 15%;
   right: 10%;
   transform: translate(10%, -10%);
-}
+} */
 
-.project .frame .pro_zip .pro_three {
+/* .project .frame .pro_zip .pro_three {
   position: absolute;
   bottom: 5%;
   left: 10%;
   transform: translate(-10%, 10%);
-}
+} */
 
-.project .frame .pro_zip .pro_four {
+/* .project .frame .pro_zip .pro_four {
   position: absolute;
   bottom: 5%;
   right: 10%;
   transform: translate(10%, 10%);
-}
+} */
 
-.project .frame .pro_zip .pro_five {
+/* .project .frame .pro_zip .pro_five {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .project .frame .pro_zip > div .pro_one_img {
   background-image: url(../img/ramen_logo.png);
@@ -999,6 +1018,8 @@ a:focus {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 /* 반응형 start */
@@ -1120,7 +1141,11 @@ a:focus {
   }
   
 
- 
+  .project .frame .pro_zip > div ._inner > p {
+    font-size: 1.5rem;
+    /* border: 1px solid red; */
+    text-align: left;
+  }
   
 
   

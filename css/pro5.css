@@ -220,6 +220,7 @@
 
   .pro5 .style_guide5 .sg5 .color5 .col5_zip {
     width: 40%;
+    /* border: 1px solid red; */
   }
 
   .pro5 .style_guide5 .sg5 .color5 .col5_zip > div {

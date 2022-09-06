@@ -215,6 +215,7 @@
   .pro1 .style_guide1 .sg1 > div {
     width: calc(100% / 2);
     padding-top: 2rem;
+    /* border: 1px solid red; */
   }
     
   .pro1 .style_guide1 .sg1 .color1 .col1_zip > div {
@@ -226,12 +227,12 @@
   }
   
   .pro1 .style_guide1 .sg1 .color1 .col1_zip {
+    width: calc(100% - 10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* border: 1px solid black; */
-    width: 50%;
   }
   
   .pro1 .style_guide1 .sg1 .color1 .col1_zip .col1_1 {

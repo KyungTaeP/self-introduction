@@ -262,7 +262,7 @@ body {
   color: #57585c;
   color: var(--color-text);
   background-color: #000;
-  border: 10px solid red;
+  /* border: 10px solid red; */
   overflow: hidden;
 }
 

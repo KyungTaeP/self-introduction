@@ -13,9 +13,39 @@ $(function(){
 
     $('.skill>div').on('click',function(){
         var idx = $(this).index();
+        console.log(idx);
+
+        $skill.removeClass('on');
         $txt.removeClass('on');
-        $('.skill_txt > div').eq(idx).addClass('on');
+        // $('.skill>div').eq(idx).toggleClass('on');
+        // $('.skill_txt > div').eq(idx).addClass('on');
+        
+
+        $('.skill>div').eq(idx).click(function(){
+            $('.skill>div').eq(idx).toggleClass('on');
+            $('.skill_txt > div').eq(idx).toggleClass('on');
+            if($('.skill>div').attr('class') == 'on'){
+                $(this).removeClass('on');
+                $('.skill_txt>div').removeClass('on');
+                } else {
+                    $(this).addClass('on');
+                    $('.skill_txt>div').eq(idx).addClass('on');
+                }
+        })
     });
+
+    
+
+    
+    // $('.skill>div').eq(idx).click(function(){
+    //     if($('.skill>div').attr('class') == 'on'){
+    //         $(this).removeClass('on');
+    //         $('.skill_txt>div').removeClass('on');
+    //     } else {
+    //         $(this).addClass('on');
+    //         $('.skill_txt>div').eq(idx).addClass('on');
+    //     }
+    // })
 })
 
 $(function(){

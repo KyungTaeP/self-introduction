@@ -21,7 +21,7 @@
     height: 50px;
     border-radius: 10px;
     border: 1px solid #C4C1C1;
-    background-color: #C4C1C1;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
   }
 
